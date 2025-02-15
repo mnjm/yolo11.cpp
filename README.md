@@ -4,7 +4,7 @@ Lite-weight Optimized C++ wrapper for running YOLO11 object detection using an O
 
 To use it in your project, just include the `./include/yolov11.hpp` and `./src/yolov11.cpp`.
 
-Note: for this to work, place the `coco.names` file in the same directory as the mode;
+Note: for this to work, place the `coco.names` file in the same directory as the model
 
 CUDA acceleration can be enabled using [`CUDA_ACC`](https://github.com/mnjm/yolo11.cpp/blob/ea0701b79efdde78523e15c5ef5dc021e161c94a/include/yolov11.hpp#L3C12-L3C20) macro. Same with OpenCL using [`OPENCL_ACC`](https://github.com/mnjm/yolo11.cpp/blob/ea0701b79efdde78523e15c5ef5dc021e161c94a/include/yolov11.hpp#L4)
 
