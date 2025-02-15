@@ -1,5 +1,8 @@
 #pragma once
 
+// #define CUDA_ACC
+// #define OPENCL_ACC
+
 #include <opencv2/opencv.hpp>
 #include <opencv2/dnn.hpp>
 #include <string>
@@ -23,7 +26,7 @@ public:
 float calculateIoU(const ObjectBBox &box1, const ObjectBBox &box2);
 
 class YOLOv11 {
-    
+
 public:
     using ClassChecker = std::function<bool(int, const std::string &)>;
 

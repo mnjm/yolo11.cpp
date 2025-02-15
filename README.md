@@ -1,12 +1,12 @@
 # YOLO11.cpp
 
-C++ wrapper for running YOLOv11 object detection using an ONNX model with OpenCV's DNN with optimized post-processing.
+Lite-weight Optimized c++ wrapper for running YOLO11 object detection using an ONNX model with OpenCV's DNN.
 
 To use it in your project, just include the `./include/yolov11.hpp` and `./src/yolov11.cpp`.
 
-Note: For this to work, place the `coco.names` file within the same director as model.
+Note: for this to work, place the `coco.names` file in the same directory as the mode;
 
-CUDA Acceleration can be enabled using `CUDA_ACC` macro. Same with OpenCL using `OPENCL_ACC`
+CUDA acceleration can be enabled using [`CUDA_ACC`]() macro. Same with OpenCL using [`OPENCL_ACC`]()
 
 ## Example
 

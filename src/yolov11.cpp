@@ -67,11 +67,11 @@ YOLOv11::YOLOv11(
 {
     // Load the network
     net_ = cv::dnn::readNetFromONNX(model_path);
-#ifdef CUDA_ACC
+#if defined(CUDA_ACC)
     net_.setPreferableBackend(cv::dnn::DNN_BACKEND_CUDA);
     net_.setPreferableTarget(cv::dnn::DNN_TARGET_CUDA);
     std::cout << "Using CUDA" << std::endl;
-#elif OPENCL_ACC
+#elif defined(OPENCL_ACC)
     net_.setPreferableBackend(cv::dnn::DNN_BACKEND_OPENCV);
     net_.setPreferableTarget(cv::dnn::DNN_TARGET_OPENCL);
     std::cout << "Using OPENCL" << std::endl;
