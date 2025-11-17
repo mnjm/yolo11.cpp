@@ -15,7 +15,7 @@ Running on an Image
 ```cpp
 #include <opencv2/opencv.hpp>
 #include "yolov11.hpp"
-#invlude <iostream>
+#include <iostream>
 
 int main() {
     YOLOv11 model("yolo11s.onnx");
